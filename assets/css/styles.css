@@ -1,0 +1,251 @@
+/* service */
+
+#service .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#services {
+  width: 100%;
+  height: 100vh;
+}
+
+#four-services {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#four-services .card {
+  border: 0px !important;
+  border-radius: 0;
+}
+
+#four-services .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#four-services .service-card :hover {
+  background: rgba(86, 38, 3, 0.7) !important;
+}
+
+#service-1 {
+  height: 100%;
+  background-image: url("../../assets/img/64986.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#service-2 {
+  height: 100%;
+  background-image: url("../../assets/img/4897.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#service-3 {
+  height: 100%;
+  background-image: url("../../assets/img/68.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#service-4 {
+  background: #252525;
+  height: 100%;
+  background-image: url("../../assets/img/20398.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#service-1-body {
+  text-align: center;
+  background: rgba(3, 69, 130, 0.71);
+  font-family: Amiko, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#service-2-body {
+  text-align: center;
+  background: rgba(3, 69, 130, 0.71);
+  font-family: Amiko, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#service-3-body {
+  text-align: center;
+  background: rgba(3, 69, 130, 0.71);
+  font-family: Amiko, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#service-4-body {
+  text-align: center;
+  background: rgba(3, 69, 130, 0.71);
+  font-family: Amiko, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.service-list-icon {
+  color: #05802f;
+}
+
+.service-content {
+  display: none;
+  flex-basis: 200%;
+  height: auto;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  background-image: url("../../assets/img/service_content_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-header-link {
+  display: none;
+}
+
+.service-content-show {
+  display: block !important;
+}
+
+#four-services .card-link {
+  color: #ffffff !important;
+}
+
+#four-services .card-link:hover {
+  cursor: pointer;
+}
+
+.collapse.show {
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: auto;
+}
+
+@media (min-width: 300px) {
+  .four-services-content {
+    height: 200px;
+    flex-basis: 50%;
+  }
+
+  @media (min-width: 300px) {
+    #service-heading {
+      /*top: 99%;*/
+      padding-top: 80px !important;
+      height: 150px;
+      /*height: 120px;*/
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #service-heading {
+      width: 100%;
+      z-index: 100;
+      position: absolute;
+      top: 100%;
+      padding-top: 25px !important;
+      height: 90px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+      font-family: Amiko, sans-serif;
+    }
+
+    .service-header-link {
+      display: block !important;
+      font-size: 20px;
+      color: #ffffff;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #four-services .card-title {
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    #four-services .card-text {
+      font-size: 16px;
+      text-align: justify;
+      font-family: Arial;
+    }
+
+    .service-content-list {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 16px;
+      padding: 0;
+      list-style: none;
+      font-family: Arial;
+    }
+    .four-services-content {
+      height: 100% !important;
+      flex-basis: 50%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #four-services .card-text {
+      font-size: 18px !important;
+      text-align: justify;
+      font-family: Arial;
+    }
+
+    .service-content-list {
+      margin-top: 15px;
+      /*margin-left: 30%;*/
+      width: 100%;
+      font-size: 18px !important;
+      padding: 0;
+      list-style: none;
+      font-family: Arial;
+    }
+  }
+}
